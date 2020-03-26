@@ -1,5 +1,5 @@
-name: BackToServer
-main: pulsepvp_.BackToServer.BackToServer
+name: BackToServer_Bungee
+main: pulsepvp_.BackToServer_Bungee.BackToServer_Bungee
 version: 1.0
 author: PulsePvP_
 depend: [AuthMeBungee]
