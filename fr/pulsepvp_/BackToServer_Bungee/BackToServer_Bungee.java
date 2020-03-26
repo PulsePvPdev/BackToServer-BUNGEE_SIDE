@@ -35,6 +35,7 @@ public class BackToServer_Bungee extends Plugin {
 			e.printStackTrace();
 		}
 		database.Connect();
+		Functions.initDB();
 		instance = this;
 		getProxy().getPluginManager().registerListener(this, new ServerConnected());
 		getLogger().info("[BackToServer - Bungee] Successfully enabled !");

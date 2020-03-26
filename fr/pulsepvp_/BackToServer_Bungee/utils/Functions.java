@@ -36,4 +36,10 @@ public class Functions {
 		return resourceFile;
 	}
 
+	public static void initDB() {
+		BackToServer_Bungee.database.ExecuteCommand("CREATE TABLE IF NOT EXISTS `players` ("
+				+ "  `player_name` varchar(16) NOT NULL," + "  `last_server_name` varchar(25) NOT NULL,"
+				+ "  PRIMARY KEY (`player_name`))" + " ENGINE=InnoDB DEFAULT CHARSET=latin1;");
+	}
+
 }
